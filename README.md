@@ -1,4 +1,5 @@
-# Install neural-style on OS X Mavericks (https://github.com/jcjohnson/neural-style)
+# Install neural-style on OS X Mavericks
+From https://github.com/jcjohnson/neural-style
 
 ## 1. Install torch and lua
 
