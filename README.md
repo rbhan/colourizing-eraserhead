@@ -1,7 +1,8 @@
 # Install neural-style on OS X Mavericks
 Directions from https://github.com/jcjohnson/neural-style
 
-Did NOT install CUDA, cuDNN, or OpenCL backends
+Did NOT install CUDA, cuDNN, or OpenCL backends <br>
+(without GPU capabilities, need to run in CPU mode by setting flag -gpu -1)
 
 ## 1. Install torch and lua
 
