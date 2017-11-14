@@ -5,45 +5,48 @@ From https://github.com/jcjohnson/neural-style
 
 In terminal:
 
-$ git clone https://github.com/torch/distro.git ~/torch --recursive
-$ cd ~/torch; bash install-deps; # installs package dependencies
+$ git clone https://github.com/torch/distro.git ~/torch --recursive <br>
+$ cd ~/torch; bash install-deps; # installs package dependencies <br>
 $ ./install.sh # installs LuaJIT, Lua Rocks
 
-$ cat .bash_profile >> .profile 
-$ rm .bash_profile
+$ cat .bash_profile >> .profile <br>
+$ rm .bash_profile <br>
 $ source ~/.profile # adds torch to PATH
 
-To remove torch: 
+To remove torch: <br>
 $ rm -rf ~/torch
 
-Run torch from terminal:
+Run torch from terminal: <br>
 $ th
 
-Install with luarocks:
-$ luarocks install torch
-$ luarocks install nn
-$ luarocks install optim
+Install with luarocks: <br>
+$ luarocks install torch <br>
+$ luarocks install nn <br>
+$ luarocks install optim <br>
 $ luarocks install lua-cjson
 
-Install torch-hdf5 from GitHub:
-$ git clone https://github.com/deepmind/torch-hdf5
-$ cd torch-hdf5
+Install torch-hdf5 from GitHub: <br>
+$ git clone https://github.com/deepmind/torch-hdf5 <br>
+$ cd torch-hdf5 <br>
 $ luarocks make hdf5-0-0.rockspec
 
 ## 2. Install loadcaffe
 
+```
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # installs Homebrew
 $ brew tap homebrew/versions
 $ brew install protobuf
-$ luarocks install loadcaffe
+$ luarocks install loadcaffe ```
 
 ## 3. Install neural-style
 
-Clone neural-style:
+Clone neural-style: 
+
+```
 $ cd ~/
 $ git clone https://github.com/jcjohnson/neural-style.git
 $ cd neural-style
-$ sh models/download_models.sh
+$ sh models/download_models.sh ```
 
 ## 4. Test that everything installed correctly
 
